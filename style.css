@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-group {
+  display: table;
+}
+
+.table-row-group {
+  display: table-row;
+  margin-top: 5px;
+}
+
+.table-cell {
+  display: table-cell;
+  margin: 0px 22px;
+}
+
+.input-header-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+}
+
+.input-field {
+  padding: 5.5px 6px;
+  border-radius: 4px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#portrait {
+  animation: shake 22.5s;
+  animation-iteration-count: infinite;
+}
+
+#portrait:hover {
+  animation: shake-exaggerate 0.35s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate( 0.0px,  0.0px) rotate( 0.0deg); }
+   10% { transform: translate(-10.5px, -0.5px) rotate(-0.2deg); }
+   20% { transform: translate( 10.5px,  0.5px) rotate( 0.2deg); }
+   30% { transform: translate(-10.5px, -0.5px) rotate(-0.2deg); }
+   40% { transform: translate( 0.0px,  0.0px) rotate( 0.0deg); }
+   50% { transform: translate( 10.5px,  0.5px) rotate( 0.2deg); }
+   60% { transform: translate(-10.5px, -0.5px) rotate(-0.2deg); }
+   70% { transform: translate( 10.5px,  0.5px) rotate( 0.2deg); }
+   80% { transform: translate(-10.5px, -0.5px) rotate(-0.2deg); }
+   90% { transform: translate( 10.5px,  0.5px) rotate( 0.2deg); }
+  100% { transform: translate( 0.0px,  0.0px) rotate( 0.0deg); }
+}
+
+@keyframes shake-exaggerate {
+    0% { transform: translate(  0.0px,  0.0px) rotate(  0deg); }
+   10% { transform: translate(-40.5px, -0.5px) rotate(360deg); }
+   20% { transform: translate(  0.0px,  0.0px) rotate(  0deg); }
+   30% { transform: translate( 40.5px,  0.5px) rotate(360deg); }
+   40% { transform: translate(  0.0px,  0.0px) rotate(  0deg); }
+   50% { transform: translate(-40.5px, -0.5px) rotate(360deg); }
+   60% { transform: translate(  0.0px,  0.0px) rotate(  0deg); }
+   70% { transform: translate( 40.5px,  0.5px) rotate(360deg); }
+   80% { transform: translate(  0.0px,  0.0px) rotate(  0deg); }
+   90% { transform: translate(-40.5px, -0.5px) rotate(360deg); }
+  100% { transform: translate(  0.0px,  0.0px) rotate(  0deg); }
+}
+
+#submit {
+  background-image: linear-gradient(to right, red 0%, #8b0000 90%);
+  color: white;
+
+  background-size: 200% auto;
+  transition: 0.5s;
+
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-position: right;
+}
+
+#bus-arrival-info {
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+#warning {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+#list-table {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.list-table-border {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+.list-table-odd-cell {
+  background-color: #cce7ec;
+;
+}
+
+.list-table-even-cell {
+  background-color: #d3f8d3;
+}
